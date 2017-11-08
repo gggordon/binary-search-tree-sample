@@ -8,15 +8,22 @@ int main(){
 	        = new BinarySearchTree();
 	myBinarySearchTree->insert(5);
 	myBinarySearchTree->insert(12);
-	myBinarySearchTree->insert(0)
+	myBinarySearchTree->insert(0);
 	myBinarySearchTree->insert(38);
 	myBinarySearchTree->insert(9);
 	myBinarySearchTree->display();
-	myBinarySearchTree->destroy();
+	
     isNumInBinarySearchTree(myBinarySearchTree,5);
     isNumInBinarySearchTree(myBinarySearchTree,200);
-    isNumInBinarySearchTree(myBinarySearchTree,1000);
+    isNumInBinarySearchTree(myBinarySearchTree,38);
     isNumInBinarySearchTree(myBinarySearchTree,1);
+
+    myBinarySearchTree->remove(38);
+    myBinarySearchTree->display();
+    myBinarySearchTree->remove(5);
+    myBinarySearchTree->display();
+
+    myBinarySearchTree->destroy();
 	delete myBinarySearchTree;
 	return 0;
 }
